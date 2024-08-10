@@ -13,5 +13,9 @@ $ docker container run -d -p 3306:3306 -e MYSQL_ROOT_PASSWORD="root" -e MYSQL_DA
 e MYSQL_USER="docker_usr" -e MYSQL_PASSWORD="docker_pwd" mysql
 -> Testado via Dbeaver.
 
+--- Desafio 3
+
+Definir a criação de um container para MongoDB para teste sem volume com os parâmetros solicitados.
+
 $ docker container run -d -p 27017:27017 -e MONGO_INITDB_ROOT_USERNAME=mongo_usr -e MONGO_INITDB_ROOT_PASSWORD=mongo_pwd mongo
 -> Testado via NoSQLBooster.

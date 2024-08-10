@@ -2,13 +2,16 @@
 
 Definir a criação de um container para PosgresSQL para teste sem volume com os parâmetros solicitados.
 
-docker container run -d -p 5432:5432 -e POSTGRES_DB=curso_docker -e POSTGRES_USER=docker_usr -e POSTGRES_PASSWORD=docker_pwd postgres
+$ docker container run -d -p 5432:5432 -e POSTGRES_DB=curso_docker -e POSTGRES_USER=docker_usr -e POSTGRES_PASSWORD=docker_pwd postgres
 -> Testado via Dbeaver.
 
 --- Desafio 2
 
 Definir a criação de um container para MySQL para teste sem volume com os parâmetros solicitados.
 
-docker container run -d -p 3306:3306 -e MYSQL_ROOT_PASSWORD="root" -e MYSQL_DATABASE="docker_db" -
+$ docker container run -d -p 3306:3306 -e MYSQL_ROOT_PASSWORD="root" -e MYSQL_DATABASE="docker_db" -
 e MYSQL_USER="docker_usr" -e MYSQL_PASSWORD="docker_pwd" mysql
 -> Testado via Dbeaver.
+
+$ docker container run -d -p 27017:27017 -e MONGO_INITDB_ROOT_USERNAME=mongo_usr -e MONGO_INITDB_ROOT_PASSWORD=mongo_pwd mongo
+-> Testado via NoSQLBooster.
